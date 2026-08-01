@@ -1,0 +1,47 @@
+# HUMAN Security Documentation
+
+> HUMAN Security is a cybersecurity company that protects businesses from malicious bot activity and digital ad fraud. It's also a global leader in Agentic Trust, which informs how humans, bots, and AI agents operate online. This site serves as HUMAN's customer knowledge base that informs customers how to integrate and use HUMAN's Applications Protection platform, which is related to bot and agentic behavior, and Advertising platform, which is related to ad fraud protection. 
+
+Things to keep in mind:
+- Advertising Protection and Applications Protection are two separate product lines that do not have overlap. Documentation for one rarely, if ever, is relevant for the other. 
+- Each product has its own product, API, and SDK documentation. 
+
+## Applications Protection
+
+Applications Protection has the following primary products:
+
+- [Sightline Cyberfraud Defense](https://docs.humansecurity.com/applications/about-sightline-cyberfraud-defense): Applications Protection's flagship product that mitigates bot activity, account fraud, use of compromised credentials, and agentic activity. Effectively combines the legacy products Bot Defender, Account Defender, and Credential Intelligence while adding the newer product, AgenticTrust. Starting from January 2026, HUMAN only offers Sightline to new customers. 
+- [AgenticTrust](https://docs.humansecurity.com/applications/getting-started-with-agentictrust): An offering specifically for monitoring and mitigating agentic AI that was initially a part of Sightline, but has since been offered as an add-on to legacy Bot Defender users as well.
+- [Bot Defender (legacy)](https://docs.humansecurity.com/applications/bd-overview): Application Protection's legacy bot mitigation solution. 
+- [Account Defender (legacy)](https://docs.humansecurity.com/applications/account-defender-overview): Application Protection's legacy account fraud protection solution. 
+- [Credential Intelligence (legacy)](https://docs.humansecurity.com/applications/credential-intelligence-overview): Application Protection's legacy compromised credentials mitigation solution. 
+- [Code Defender](https://docs.humansecurity.com/applications/cd-introduction): A product that mitigates malicious scripts and ensures PCI DSS 4.0 requirements 6.4.3 and 11.6.1 compliance.  
+
+Additionally, this site documents [Platform settings](https://docs.humansecurity.com/applications/account-settings), which has a variety of account settings applicable to Sightline, AgenticTrust, Bot Defender, Account Defender, and Credential Intelligence.
+
+Applications Protection documentation also has technical developer documentation: 
+
+- [Enforcer documentation](https://docs.humansecurity.com/applications/about-enforcers): Guidance on how to integrate and configure HUMAN Enforcers, which are lightweight SDKs that are typically installed on a user's server. There are multiple frameworks available to best suit the user's needs. 
+- [Mobile SDK documentation](lihttps://docs.humansecurity.com/applications/mobile-sdk-intronk): Guidance on how to integrate a HUMAN Enforcer on mobile applications for iOS, visionOS, and Android.
+- [API documentation](https://docs.humansecurity.com/applications/reference/about-the-applications-api): Various APIs that work with different Applications Protection products.
+
+## Advertising Protection
+
+Advertising Protection includes the following primary products:
+
+- [MediaGuard](https://docs.humansecurity.com/advertising/mediaguard-overview): Pre-bid analysis of bid requests and real-time recommendations (for example, bid or do not bid) so invalid traffic can be filtered before impressions are served. MediaGuard integrations are expected to include FraudSensor so post-bid data can validate pre-bid predictions and improve models; see [Closing the Loop — MediaGuard and FraudSensor](https://docs.humansecurity.com/advertising/closing-the-loop-mediaguard-and-fraudsensor).
+- [FraudSensor](https://docs.humansecurity.com/advertising/fraudsensor-overview): Post-bid solution for detecting advertising fraud on served impressions to classify traffic quality and sophisticated invalid traffic (IVT).
+- [Page Intelligence](https://docs.humansecurity.com/advertising/page-intelligence-dashboard): On-page solution for flagging invalid pageviews on landing pages and related traffic, with dashboard views tailored to that use case.
+- [Ad Click Defense](https://docs.humansecurity.com/advertising/ad-click-defense/overview): Real-time analysis of ad clicks across the click lifecycle to detect invalid and malicious click activity (including general and sophisticated IVT click categories) for filtering, billing, or blocking decisions.
+- [Malvertising Defense](https://docs.humansecurity.com/advertising/about-the-malvertising-overview): For publishers and advertising platforms. Malvertising Defense addresses malicious and unwanted ads through threat monitoring and publisher-side ad quality, including the Malvertising Overview dashboard for recent attacks and trends. Related documentation covers [threat analytics](https://docs.humansecurity.com/advertising/about-the-threat-analytics-dashboard), the [threat feed](https://docs.humansecurity.com/advertising/about-the-threat-feed), the [threat library](https://docs.humansecurity.com/advertising/about-the-threat-library), and ad quality ([Ad Quality for Publishers Configuration](https://docs.humansecurity.com/advertising/about-the-ad-quality-for-publishers-configuration-dashboard), [Ad Quality Analytics](https://docs.humansecurity.com/advertising/about-the-ad-quality-analytics-dashboard)). To deploy the Malvertising Defense script, use [Malvertising Defense for Publishers](https://docs.humansecurity.com/advertising/integrate-malvertising-defense-for-publishers) or [Malvertising Defense for Platforms](https://docs.humansecurity.com/advertising/integrate-malvertising-defense-for-platforms).
+
+Advertising Protection also includes documentation for product-specific dashboards, taxonomies, integrations, and APIs:
+
+- [The HUMAN Dashboard documentation](https://docs.humansecurity.com/advertising/understand-the-human-dashboard): executive summaries and product-specific views (including MediaGuard, FraudSensor, Click Defense, and Page Intelligence dashboards).
+- [The Reporting API documentation](https://docs.humansecurity.com/advertising/reference/about-the-reporting-api): Download generated report files that mirror dashboard reporting.
+- [The MediaGuard API documentation](https://docs.humansecurity.com/advertising/reference/about-the-mediaguard-api): HTTP lookup and health-check endpoints for pre-bid IVT predictions.
+- Taxonomy documentation: the [IVT taxonomy](https://docs.humansecurity.com/advertising/ivt-taxonomy) describes invalid traffic categories for impressions and related pre-bid and post-bid analysis (MediaGuard and FraudSensor), and the [Click IVT taxonomy](https://docs.humansecurity.com/advertising/click-ivt-taxonomy) describes invalid traffic categories for ad clicks (Click Defense).
+
+## Optional
+
+- [HUMAN Security's marketing website](https://www.humansecurity.com/)

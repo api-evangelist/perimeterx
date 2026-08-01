@@ -1,7 +1,16 @@
 aid: perimeterx
-name: Perimeterx
-description: Perimeterx is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: PerimeterX (HUMAN Security)
+description: >-
+  PerimeterX was a bot mitigation and application security company that in 2022 merged
+  with White Ops to form HUMAN Security; the PerimeterX products (Bot Defender, Account
+  Defender, Credential Intelligence, Code Defender) now ship under HUMAN's Applications
+  Protection line, consolidated into the Sightline Cyberfraud Defense platform plus the
+  newer AgenticTrust offering for monitoring and mitigating AI agents. HUMAN also runs an
+  Advertising Protection line (MediaGuard, FraudSensor, Page Intelligence, Ad Click Defense,
+  Malvertising Defense) for ad-fraud and invalid-traffic detection. Developers integrate via
+  lightweight server-side and edge "Enforcer" SDKs, mobile SDKs, and REST APIs authenticated
+  with Bearer server tokens, and can drive the platform from AI agents through HUMAN's
+  official Model Context Protocol (MCP) server.
 url: https://raw.githubusercontent.com/api-evangelist/perimeterx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +18,119 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: PerimeterX merged with White Ops to become HUMAN Security (2022); perimeterx.com and docs.perimeterx.com now redirect to humansecurity.com
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Security
+- Bot Mitigation
+- Application Security
+- Fraud Prevention
+- Ad Fraud
+- Account Takeover
+- Agentic AI
+- Cybersecurity
+- API
+image: https://raw.githubusercontent.com/HumanSecurity/human-mcp-server/main/.images/logo.png
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Applications Protection API
+  description: >-
+    REST API surface behind HUMAN's Applications Protection products (Account Defender,
+    Bot Defender, Credential Intelligence, Code Defender / PCI DSS). Manage custom rules,
+    custom lists, account information, feedback, client-side script inventory and incidents.
+    Bearer-token authenticated; JSON request/response with a {result, message, content} envelope.
+  humanURL: https://docs.humansecurity.com/applications/reference/about-the-applications-api
+  baseURL: https://console.humansecurity.com/api/v2
+  properties:
+  - type: Documentation
+    url: https://docs.humansecurity.com/applications/reference/about-the-applications-api
+  - type: Authentication
+    url: https://docs.humansecurity.com/applications/reference/authentication
+  - type: GettingStarted
+    url: https://docs.humansecurity.com/applications/reference/getting-started
+- name: MediaGuard API
+  description: >-
+    Advertising Protection pre-bid API — HTTP lookup and health-check endpoints returning
+    real-time invalid-traffic (IVT) predictions on bid requests so buyers can filter fraud
+    before impressions are served.
+  humanURL: https://docs.humansecurity.com/advertising/reference/about-the-mediaguard-api
+- name: Reporting API
+  description: >-
+    Advertising Protection reporting API — download generated report files that mirror the
+    HUMAN dashboard reporting for MediaGuard, FraudSensor, Click Defense and Page Intelligence.
+  humanURL: https://docs.humansecurity.com/advertising/reference/about-the-reporting-api
+common:
+- type: Website
+  url: https://www.humansecurity.com/
+- type: DeveloperPortal
+  url: https://docs.humansecurity.com/home
+- type: Documentation
+  url: https://docs.humansecurity.com/home
+- type: APIReference
+  url: https://docs.humansecurity.com/applications/reference/about-the-applications-api
+- type: GettingStarted
+  url: https://docs.humansecurity.com/applications/reference/getting-started
+- type: Authentication
+  url: authentication/perimeterx-authentication.yml
+- type: SignUp
+  url: https://console.humansecurity.com/
+- type: Login
+  url: https://console.humansecurity.com/
+- type: Support
+  url: https://docs.humansecurity.com/applications/reference/about-the-applications-api
+- type: GitHubOrganization
+  url: https://github.com/humansecurity
+- type: StatusPage
+  url: https://status.humansecurity.com/
+- type: TrustCenter
+  url: security/perimeterx-trust-center.yml
+- type: Compliance
+  url: https://trust.humansecurity.com/
+- type: LLMsTxt
+  url: llms/perimeterx-llms.txt
+- type: WellKnown
+  url: well-known/perimeterx-well-known.yml
+- type: SecurityTxt
+  url: well-known/perimeterx-security.txt
+- type: Packages
+  url: packages/perimeterx-packages.yml
+- type: SDKs
+  url: packages/perimeterx-packages.yml
+- type: MCPServer
+  url: mcp/perimeterx-mcp.yml
+- type: Conventions
+  url: conventions/perimeterx-conventions.yml
+- type: Conformance
+  url: conformance/perimeterx-conformance.yml
+- type: Lifecycle
+  url: lifecycle/perimeterx-lifecycle.yml
+- type: DomainSecurity
+  url: security/perimeterx-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/perimeterx-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.humansecurity.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

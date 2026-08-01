@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+url: https://trust.humansecurity.com/
+platform: Responsive (RFPIO) Trust Center
+certifications: []
+note: >-
+  HUMAN Security publishes a public Trust Center at trust.humansecurity.com (meta keywords
+  "Trust Center"), hosted on the Responsive/RFPIO trust platform. The certification package is
+  gated behind the portal (JavaScript SPA), so individual certificate names (SOC 2 / ISO 27001 /
+  PCI DSS) were not machine-readable at capture time and are intentionally left unasserted.
+evidence:
+- source: https://trust.humansecurity.com/
+  http_status: 200
+  keywords: [trust center]

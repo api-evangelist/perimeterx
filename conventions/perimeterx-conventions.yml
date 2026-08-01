@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.humansecurity.com/applications/reference/getting-started and
+  https://docs.humansecurity.com/applications/reference/authentication
+authentication:
+  style: bearer-token
+  header: "authorization: Bearer <token>"
+  ref: authentication/perimeterx-authentication.yml
+transport:
+  https_required: true
+  note: All requests must be sent over HTTPS; HTTP requests fail.
+content_type:
+  request: application/json
+  response: application/json
+versioning:
+  scheme: uri-path
+  current: v2
+  note: >-
+    API version is carried in the URL path (e.g. /api/v2/botDefender/customRules). Each
+    solution can be on a different version and a different host, so verify per API.
+hosts:
+  note: >-
+    Each solution exposes its own host. The Applications Protection API base is
+    https://console.humansecurity.com/api/v2. Advertising Protection (MediaGuard, Reporting)
+    use separate hosts documented per product.
+response_envelope:
+  shape: "{ result: boolean, message: string, content: array|object }"
+  success_example: '{ "result": true, "message": "success", "content": [ ... ] }'
+  note: >-
+    Bot Defender list endpoints return an array in content (empty array when no records).
+    This is a custom envelope, not RFC 9457 problem+json.
+idempotency:
+  supported: false
+  note: No documented idempotency-key header at time of capture.
+pagination:
+  documented: false
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/perimeterx-authentication.yml
+  lifecycle: lifecycle/perimeterx-lifecycle.yml
+  conformance: conformance/perimeterx-conformance.yml

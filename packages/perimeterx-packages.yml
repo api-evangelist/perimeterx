@@ -1,0 +1,101 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  npm, PyPI, Maven Central, Packagist, RubyGems registries + PerimeterX/HumanSecurity
+  GitHub orgs (Enforcer SDKs). PerimeterX SDKs ship as server-side/edge "Enforcers".
+note: >-
+  HUMAN Enforcers are lightweight server-side/edge SDKs that intercept traffic and call the
+  PerimeterX/HUMAN detection backend. Mobile SDKs (iOS/Android) instrument native apps.
+packages:
+# --- Node.js ---
+- language: javascript
+  registry: npm
+  name: "@humansecurity/human-mcp-server"
+  url: https://www.npmjs.com/package/@humansecurity/human-mcp-server
+  install: npx -y @humansecurity/human-mcp-server
+  official: true
+  category: mcp-server
+- language: javascript
+  registry: npm
+  name: perimeterx-node-core
+  url: https://www.npmjs.com/package/perimeterx-node-core
+  install: npm install perimeterx-node-core
+  official: true
+  category: enforcer
+- language: javascript
+  registry: npm
+  name: perimeterx-node-express
+  url: https://www.npmjs.com/package/perimeterx-node-express
+  install: npm install perimeterx-node-express
+  official: true
+  category: enforcer
+# --- Python ---
+- language: python
+  registry: pypi
+  name: perimeterx-python-wsgi
+  url: https://pypi.org/project/perimeterx-python-wsgi/
+  install: pip install perimeterx-python-wsgi
+  official: true
+  category: enforcer
+# --- Java ---
+- language: java
+  registry: maven
+  name: com.perimeterx:perimeterx-sdk
+  url: https://search.maven.org/artifact/com.perimeterx/perimeterx-sdk
+  install: "<dependency><groupId>com.perimeterx</groupId><artifactId>perimeterx-sdk</artifactId></dependency>"
+  official: true
+  category: enforcer
+# --- PHP ---
+- language: php
+  registry: packagist
+  name: perimeterx/php-sdk
+  url: https://packagist.org/packages/perimeterx/php-sdk
+  install: composer require perimeterx/php-sdk
+  official: true
+  category: enforcer
+# --- Ruby ---
+- language: ruby
+  registry: rubygems
+  name: perimeter_x
+  url: https://rubygems.org/gems/perimeter_x
+  install: gem install perimeter_x
+  official: true
+  category: enforcer
+# --- Source-distributed enforcers / plugins (GitHub) ---
+- language: lua
+  registry: github
+  name: perimeterx-nginx-plugin
+  url: https://github.com/humansecurity/perimeterx-nginx-plugin
+  official: true
+  category: enforcer
+- language: lua
+  registry: github
+  name: perimeterx-kong-plugin
+  url: https://github.com/humansecurity/perimeterx-kong-plugin
+  official: true
+  category: enforcer
+- language: csharp
+  registry: github
+  name: perimeterx-asp-net
+  url: https://github.com/humansecurity/perimeterx-asp-net
+  official: true
+  category: enforcer
+- language: python
+  registry: github
+  name: perimeterx-python-3-wsgi
+  url: https://github.com/humansecurity/perimeterx-python-3-wsgi
+  official: true
+  category: enforcer
+# --- Mobile SDKs ---
+- language: swift
+  registry: github
+  name: human-security-ios-sdk-spm
+  url: https://github.com/PerimeterX/human-security-ios-sdk-spm
+  official: true
+  category: mobile-sdk
+- language: objective-c
+  registry: github
+  name: px-iOS-Framework
+  url: https://github.com/PerimeterX/px-iOS-Framework
+  official: true
+  category: mobile-sdk

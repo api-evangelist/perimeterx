@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  docs.humansecurity.com Applications API reference + trust.humansecurity.com trust center +
+  human-mcp-server README (Code Defender / PCI DSS)
+standards:
+- id: oauth2
+  conforms: false
+  evidence: API uses static Bearer server tokens, not OAuth 2.0 flows
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: responses use a custom {result, message, content} envelope, not application/problem+json
+- id: https-required
+  conforms: true
+  evidence: docs mandate HTTPS; HTTP requests fail
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: https://www.humansecurity.com/.well-known/security.txt (200)
+- id: pci-dss-4.0
+  conforms: true
+  evidence: >-
+    Code Defender / PCI DSS API help customers meet PCI DSS 4.0 requirements 6.4.3 and 11.6.1
+    (client-side script and header monitoring); HUMAN publishes a compliance program at
+    https://trust.humansecurity.com/
+compliance_program:
+  url: https://trust.humansecurity.com/
+  note: >-
+    HUMAN Security operates a public Trust Center (Responsive/RFPIO-hosted) that gates its
+    certification package (e.g. SOC 2, ISO, PCI) behind request; specific certificate names
+    were not machine-readable from the JS portal at capture time and are not asserted here.

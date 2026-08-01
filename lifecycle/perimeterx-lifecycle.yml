@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  docs.humansecurity.com + status.humansecurity.com + product lifecycle notes in
+  docs.humansecurity.com/llms.txt
+versioning:
+  scheme: uri-path
+  current: v2
+  docs: https://docs.humansecurity.com/applications/reference/getting-started
+  note: Account-info endpoints expose both v1 and v2; version is per-solution.
+status_page: https://status.humansecurity.com/
+product_lifecycle:
+  note: >-
+    Bot Defender, Account Defender and Credential Intelligence are legacy products folded into
+    Sightline Cyberfraud Defense; as of January 2026 HUMAN only offers Sightline to new
+    customers. AgenticTrust (agentic-AI monitoring) is offered within Sightline and as an
+    add-on to legacy Bot Defender.
+  legacy:
+  - Bot Defender
+  - Account Defender
+  - Credential Intelligence
+  successor: Sightline Cyberfraud Defense
+company_rebrand:
+  note: >-
+    PerimeterX merged with White Ops in 2022 to become HUMAN Security; perimeterx.com and
+    docs.perimeterx.com now redirect to humansecurity.com.
+deprecation:
+  policy_documented: false
+  note: No formal RFC 8594 Sunset/Deprecation header policy found in public docs.

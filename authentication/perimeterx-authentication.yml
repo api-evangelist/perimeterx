@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.humansecurity.com/applications/reference/authentication
+docs: https://docs.humansecurity.com/applications/reference/authentication
+summary:
+  types: [http]
+  http_schemes: [bearer]
+  api_key_in: []
+  oauth2_flows: []
+  note: >-
+    All Applications Protection API requests authenticate with a Bearer token in the
+    Authorization header (`authorization: Bearer <token>`). No password is used. Requests
+    without valid authentication fail. Tokens are provisioned per solution from the HUMAN Console.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  applies_to:
+  - Account Defender API
+  - Bot Defender API
+  - Credential Intelligence API
+  - Code Defender API
+  - PCI DSS API
+  token_types:
+  - name: server token
+    for: [Account Defender, Alerts, Bot Defender, Credential Intelligence]
+    provisioning: >-
+      Created per application in HUMAN Console under Platform Settings > Applications >
+      Application settings > Server token. Up to three server tokens per application.
+  - name: API token
+    for: [Code Defender, PCI DSS]
+    provisioning: >-
+      Retrieved from Code Defender > Settings > Integrations > Integration Settings > CD API
+      Integration; may require HUMAN support (contact-support@humansecurity.com) to generate.
+    expiry: Tokens have an expiration date; rotate before expiry.
