@@ -1,17 +1,15 @@
 generated: '2026-07-20'
 method: searched
 status: published
-source: >-
-  https://github.com/humansecurity/human-mcp-server and
-  https://www.npmjs.com/package/@humansecurity/human-mcp-server (v1.2.0, MIT)
+source: https://github.com/humansecurity/human-mcp-server and https://www.npmjs.com/package/@humansecurity/human-mcp-server
+  (v1.2.0, MIT)
 servers:
 - name: HUMAN Security MCP Server
-  description: >-
-    Official MCP server exposing HUMAN Security cyberfraud intelligence and Code Defender
-    client-side security to AI agents. Runs locally via npx/Docker and connects to the
-    HUMAN API using cyberfraud + code-defender API tokens.
+  description: Official MCP server exposing HUMAN Security cyberfraud intelligence and Code Defender client-side
+    security to AI agents. Runs locally via npx/Docker and connects to the HUMAN API using cyberfraud
+    + code-defender API tokens.
   transport: stdio
-  package: "@humansecurity/human-mcp-server"
+  package: '@humansecurity/human-mcp-server'
   version: 1.2.0
   repo: https://github.com/humansecurity/human-mcp-server
   config:
@@ -22,7 +20,8 @@ servers:
     - HUMAN_API_VERSION
   tools:
   - name: traffic_data
-    description: Comprehensive traffic analytics with overtime time-series, aggregated metrics, and ranked tops breakdowns
+    description: Comprehensive traffic analytics with overtime time-series, aggregated metrics, and ranked
+      tops breakdowns
   - name: attack_reporting_overtime
     description: Time-series attack analytics and trend analysis
   - name: attack_reporting_overview
@@ -38,8 +37,12 @@ servers:
   - name: header_inventory
     description: HTTP security header analysis and optimization
 - name: HUMAN Documentation MCP Server
-  description: >-
-    Hosted MCP server over the HUMAN documentation knowledge base for AI clients
-    (Claude Code, Cursor, etc.).
+  description: Hosted MCP server over the HUMAN documentation knowledge base for AI clients (Claude Code,
+    Cursor, etc.).
   transport: http
   url: https://docs.humansecurity.com/_mcp/server
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
