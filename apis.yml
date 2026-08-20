@@ -44,6 +44,16 @@ tags:
 - Account Takeover
 - Agentic AI
 - Cybersecurity
+tags_raw:
+- Company
+- Security
+- Bot Mitigation
+- Application Security
+- Fraud Prevention
+- Ad Fraud
+- Account Takeover
+- Agentic AI
+- Cybersecurity
 - API
 image: https://raw.githubusercontent.com/HumanSecurity/human-mcp-server/main/.images/logo.png
 maintainers:
