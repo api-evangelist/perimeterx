@@ -1,4 +1,4 @@
-# Perimeterx
+# PerimeterX (HUMAN Security)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,103 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Perimeterx is a company surfaced as a portfolio company of canaan-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+PerimeterX was a bot mitigation and application security company that in 2022 merged with White Ops to form HUMAN Security; the PerimeterX products (Bot Defender, Account Defender, Credential Intelligence, Code Defender) now ship under HUMAN's Applications Protection line, consolidated into the Sightline Cyberfraud Defense platform plus the newer AgenticTrust offering for monitoring and mitigating AI agents. HUMAN also runs an Advertising Protection line (MediaGuard, FraudSensor, Page Intelligence, Ad Click Defense, Malvertising Defense) for ad-fraud and invalid-traffic detection. Developers integrate via lightweight server-side and edge "Enforcer" SDKs, mobile SDKs, and REST APIs authenticated with Bearer server tokens, and can drive the platform from AI agents through HUMAN's official Model Context Protocol (MCP) server.
 
-Backed by: canaan-partners
+**Areas:** Company · Security · Bot Mitigation · Application Security · Fraud Prevention · Ad Fraud · Account Takeover · AI Agents · Cybersecurity
+
+## PerimeterX (HUMAN Security) on APIs.io
+
+Everything profiled for PerimeterX (HUMAN Security) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/perimeterx/](https://apis.io/providers/perimeterx/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Applications Protection API](https://apis.io/apis/perimeterx/applications-protection-api/) — REST API surface behind HUMAN's Applications Protection products (Account Defender, Bot Defender, Credential Intelligence, Code Defender / PCI DSS). Manage…
+- [MediaGuard API](https://apis.io/apis/perimeterx/mediaguard-api/) — Advertising Protection pre-bid API — HTTP lookup and health-check endpoints returning real-time invalid-traffic (IVT) predictions on bid requests so buyers…
+- [Reporting API](https://apis.io/apis/perimeterx/reporting-api/) — Advertising Protection reporting API — download generated report files that mirror the HUMAN dashboard reporting for MediaGuard, FraudSensor, Click Defense…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [perimeterx-mcp.yml](https://apis.io/servers/perimeterx/perimeterx-mcp-yml/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Perimeterx Authentication](https://apis.io/security/perimeterx/perimeterx-authentication/)
+- [Perimeterx Domain Security](https://apis.io/security/perimeterx/perimeterx-domain-security/)
+- [Perimeterx Trust Center](https://apis.io/security/perimeterx/perimeterx-trust-center/)
+- [Perimeterx Vulnerability Disclosure](https://apis.io/security/perimeterx/perimeterx-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.humansecurity.com/)
+- [Documentation](https://docs.humansecurity.com/home)
+- [Getting started](https://docs.humansecurity.com/applications/reference/getting-started)
+- [API reference](https://docs.humansecurity.com/applications/reference/about-the-applications-api)
+- [Sign up](https://console.humansecurity.com/)
+- [Support](https://docs.humansecurity.com/applications/reference/about-the-applications-api)
+- [Security](https://www.humansecurity.com/.well-known/security.txt)
+- [Compliance](https://trust.humansecurity.com/)
+- [GitHub](https://github.com/humansecurity)
+- [Status](https://status.humansecurity.com/)
+
+## API Evangelist rating
+
+**Kin Score 29.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 61.9 |
+| Access clarity | 21.1 |
+
+**Agent readiness 8.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/perimeterx/](https://apis.io/providers/perimeterx/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PerimeterX (HUMAN Security): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/perimeterx/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
